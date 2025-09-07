@@ -203,7 +203,9 @@ plugins:
   - jekyll-feed
   - jekyll-get-json
   - jekyll-imagemagick
-  - jekyll-jupyter-notebook
+  # Disable jupyter-notebook
+  # - jekyll-jupyter-notebook
+  # EndDisable
   - jekyll-link-attributes
   - jekyll-minifier
   - jekyll-paginate-v2
