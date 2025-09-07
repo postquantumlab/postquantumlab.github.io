@@ -29,14 +29,15 @@ jobs:
 
       # NEW: Python + Jupyter for notebook conversion
       # >>> Add these two steps so jekyll-jupyter-notebook can run jupyter
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      - name: Install Jupyter tools
-        run: |
-          python -m pip install --upgrade pip
-          pip install jupyter nbconvert nbformat
+      # Since Disable the notebook plugin in _config.yml, we do not need to install Jupyter in the workflow
+      #- name: Set up Python
+      #  uses: actions/setup-python@v5
+      #  with:
+      #    python-version: '3.11'
+      #- name: Install Jupyter tools
+      #  run: |
+      #    python -m pip install --upgrade pip
+      #    pip install jupyter nbconvert nbformat
       # <<< End added steps
 
       - uses: ruby/setup-ruby@v1
